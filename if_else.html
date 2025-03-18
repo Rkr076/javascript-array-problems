@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Hello world </h1>
+    <input type="text" id="inputValue" />
+    <button id="btn" onclick="getValue()">Click here</button>
+    <script>
+        let btn1 = document.getElementById('btn');
+        let title1 = document.getElementById('title');
+        let inputValue1 = document.getElementById('inputValue');
+        let age;
+
+        function getValue() {
+            age=inputValue1.value;
+            age = Number(age);
+            if(age < 0) {
+                console.log("Invalid marks! Please enter a value between 0 and 100.");
+            } else if(age >= 90) {
+                console.log("Excellent! You got an A+.");
+            } else if(age >= 80) {
+                console.log("Great job! You got an A.");
+            } else if(age >= 70) {
+                console.log("Good effort! You got a B.");
+            } else if(age >= 60) {
+                console.log("Fair enough! You got a C.");
+            } else if(age >= 50) {
+                console.log("You passed with a D.");
+            } else{
+                console.log("Unfortunately, you failed. Keep trying!");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

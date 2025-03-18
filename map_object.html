@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map object</title>
+</head>
+<body>
+
+<span>The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value.</span>
+
+
+<script>
+
+const map1 = new Map();
+map1.set(1,'Rahul');
+map1.set(2, 'patna');
+
+// for(let [keys, values] of map1)
+// {
+//   console.log(`key is ${keys} and  values is ${values}`);
+// }
+
+// map1.forEach((v, i) =>
+// {
+//    console.log(`v is ${v} and i is ${i}`);
+// })
+
+// console.log(map1.get(2));
+
+var persons = ['ram', 'shyam','mohan', 'rohan'];
+
+var [p1, p2 , p3, p4] = persons;
+console.log(p1);
+</script>
+</body>
+</html>

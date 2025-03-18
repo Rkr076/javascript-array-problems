@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Splice in array</title>
+</head>
+<body>
+
+<span>The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.It mutates original array.</span>
+<script>
+
+// if slice(2) end value is not given, it will extract all values after that
+const months = ['Jan', 'March', 'April', 'June'];
+// console.log(months.splice(2))
+
+months.splice(2, -1, 'september');
+console.log(months);
+
+
+</script>
+</body>
+</html>

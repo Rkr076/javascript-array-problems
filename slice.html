@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slice in array</title>
+</head>
+<body>
+
+<span>Slice method extracts a part of array. It doesn't change the original array. exactration depends on start & end value where end doesn't included. <br/> It is also used to create a shallow copy of array</span>
+<script>
+
+// if slice(2) end value is not given, it will extract all values after that
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+// console.log(animals);
+
+// slice array from index 2 but not include index 5
+// console.log(animals.slice(2,5));
+
+
+// negative number for slice where it starts from -3(camel) & extracts till duck as elephant is at -1 so its ignored
+// console.log(animals.slice(-3,-1))
+
+
+// In case of positive & negative numbers, end number is ignored
+ // console.log(animals.slice(1,-3))
+
+
+// create a shallowcopy with slice method
+let shallowCopy = animals.slice();
+console.log(shallowCopy);
+
+
+</script>
+</body>
+</html>
